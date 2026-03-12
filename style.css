@@ -1,0 +1,230 @@
+li{
+    display: inline;
+}
+.logo{
+    display: inline;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+line-height:1.6;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#3b2f2f;
+padding:20px 10%;
+color:white;
+}
+
+.logo{
+font-size:24px;
+font-weight:600;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#f4a261;
+}
+
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:url("images/coffee2.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-text h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.btn{
+padding:12px 25px;
+background:#f4a261;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#e76f51;
+color:white;
+}
+
+
+/* ABOUT */
+
+.about{
+padding:80px 10%;
+}
+
+.about-container{
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+.about-image img{
+width:100%;
+border-radius:10px;
+}
+
+.about-text h2{
+margin-bottom:15px;
+}
+
+
+/* MENU */
+
+.menu{
+padding:80px 10%;
+background:#fafafa;
+text-align:center;
+}
+
+.section-title{
+margin-bottom:40px;
+font-size:32px;
+}
+
+.menu-container{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+gap:30px;
+}
+
+.menu-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.menu-card:hover{
+transform:translateY(-5px);
+}
+
+.menu-card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+
+/* REVIEWS */
+
+.reviews{
+padding:80px 10%;
+text-align:center;
+}
+
+.review-container{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.review-card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+max-width:300px;
+}
+
+
+/* CONTACT */
+
+.contact{
+padding:80px 10%;
+background:#fafafa;
+}
+
+.contact-container{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+flex:1;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.contact-info{
+flex:1;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#3b2f2f;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.about-container{
+flex-direction:column;
+}
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+}
